@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+     
+
+    <title>Weather Application</title>
+  </head>
+
+  <body>
+    
+    <header class="d-flex justify-content-center  bg-primary text-light">
+      <h1>Weather Dashboard</h1>
+    </header>
+
+    <main class="row  m-3">
+      <div id="search-fields" class="col-3">
+        <h2>Enter Your City Below</h2>
+        <form id="searchbar" class="d-flex col">
+          <input type="text" id="search-input" class="" placeholder="City">
+          <button type="submit" class="btn-submit  btn bg-secondary text-light">Search</button>
+        </form>
+
+        <div id="history" class="d-flex  row ">
+        </div>
+      </div>
+
+      <div class="d-flex col-9 ">
+        <div id="currentWeather" class="col-3">
+          <h2  id="currentCity"></h2><img id="currentIcon">
+          <ul id="currentList" class="col">
+
+          </ul>
+        </div>
+        <div id="forecastStats" class=" d-flex col-7">
+          
+        </div>
+      </div>
+
+
+      
+    </main>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"
+  ></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> 
+    <script src="script.js"></script>   
+  </body>
+</html>
